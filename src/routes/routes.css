@@ -1,0 +1,214 @@
+.homeStyle > h1 {
+  text-align: center;
+}
+
+#vector {
+  margin: 15px;
+}
+
+.storeGrid {
+  margin: 10px;
+  border: 0px solid #282c34;
+}
+
+.container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.storeImg {
+  position: absolute;
+  border-radius: 25%;
+  object-fit: contain;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 10rem;
+  height: 10rem;
+
+  z-index: 1;
+}
+
+.logoImg {
+  position: absolute;
+
+  left: -20px;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+}
+
+.storeGrid > img {
+  align-items: center;
+  border-radius: 25%;
+  object-fit: contain;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 10rem;
+  height: 10rem;
+}
+
+#search {
+  margin-top: 1rem;
+  width: 370px;
+  height: 59px;
+  /* left: 15px;
+  top: 191px; */
+
+  /* background: #ffffff; */
+  border: 2px solid #4c983e;
+  border-radius: 25px;
+}
+
+/* Mobil vy */
+
+@media screen and (max-width: 895px) {
+  .homeStyle > h1 {
+    text-align: center;
+  }
+
+  #vector {
+    margin: 15px;
+  }
+
+  .storeGrid {
+    margin: 10px;
+    border: 0px solid #282c34;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    top: 100px;
+  }
+
+  .storeImg {
+    position: absolute;
+    /* align-items: center; */
+    border-radius: 25%;
+    object-fit: contain;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 10rem;
+    height: 10rem;
+
+    z-index: 1;
+  }
+
+  .logoImg {
+    position: absolute;
+
+    left: 85px;
+    top: -105px;
+    width: 6rem;
+    height: 6rem;
+    z-index: 2;
+  }
+
+  .storeGrid > img {
+    align-items: center;
+    border-radius: 25%;
+    object-fit: contain;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #search {
+    margin-top: 1rem;
+    width: 370px;
+    height: 59px;
+    /* left: 15px;
+  top: 191px; */
+
+    /* background: #ffffff; */
+    border: 2px solid #4c983e;
+    border-radius: 25px;
+  }
+
+  /* .text {
+    display: flex;
+    justify-items: center;
+  } */
+
+  .textBlack {
+    position: relative;
+    width: 364px;
+    height: 128px;
+    left: 19px;
+    top: 200px;
+    font-family: "Roboto";
+
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .textGreen {
+    color: #0d6932;
+  }
+
+  .subText1 {
+    position: relative;
+    width: 189px;
+    height: 70px;
+
+    left: 90px;
+    /* top: 220px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+
+    font-family: "Roboto";
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 18px;
+
+    text-align: center;
+    letter-spacing: -0.01px;
+
+    color: #4c983e;
+  }
+
+  .subText2 {
+    position: relative;
+    left: 40px;
+    /* top: 320px; */
+    width: 292px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #4c983e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+}
