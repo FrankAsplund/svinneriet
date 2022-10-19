@@ -13,8 +13,9 @@ export const Subscribe = () => {
       <Navbar />
 
       <div>
-        <Link to="/">Bakåt</Link>
-        <img src={vector} id="vector"></img>
+        <Link to="/">
+          <img src={vector} id="vector"></img>
+        </Link>
       </div>
 
       <div className="container">
@@ -30,7 +31,12 @@ export const Subscribe = () => {
             bidrar till ett mer hållbart samhälle med mindre slöseri.
           </p>
           <p className="subText1">99kr/mån</p>
-          <p className="subText2">Prenumerera</p>
+          <p className="subText2">Prenumerera!</p>
+          <div>
+            <Link to="/">
+              <p className="avbryt">AVBRYT</p>
+            </Link>
+          </div>
         </p>
       </div>
     </div>

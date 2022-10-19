@@ -20,8 +20,11 @@ export const Home = () => {
   return (
     <div className="homeStyle">
       <Navbar />
-      <img src={vector} id="vector" />
-      <Link to="/Subscribe">Hemköp test länk</Link>
+
+      <Link to="/Start">
+        <img src={vector} id="vector" />
+      </Link>
+
       <input id="search" />
       <h1 style={{ color: "#0D6932" }}>
         Våra tillgängliga <br></br> butiker
@@ -30,7 +33,9 @@ export const Home = () => {
         <div className="storeGrid">
           <img src={ICA} />
           <img src={coop} />
-          <img src={hemkop}></img>
+          <Link to="/Subscribe">
+            <img src={hemkop} id="hemkop"></img>
+          </Link>
           <img src={citygross} />
           <img src={pressbyran} />
           <img src={willys} />
