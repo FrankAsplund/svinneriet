@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Home } from "./routes/Home";
 import { Subscribe } from "./routes/Subscribe";
 import { Start } from "./routes/Start.js";
+import { Pay } from "./routes/Pay.js";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/Subscribe" element={<Subscribe />} />
       <Route path="/Start" element={<Start />} />
+      <Route path="/Pay" element={<Pay />} />
       <Route path="/settings" element={<Home />} />
     </Routes>
   );

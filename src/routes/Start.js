@@ -25,9 +25,8 @@ export const Start = () => {
           <img id="recycle" src={recycle}></img>
           <img id="circlecutlery" src={circlecutlery}></img>
         </div>
-
         <Link to="/">
-          <p className="subText2">Kom igång!</p>
+          <p id="subText2">Kom igång!</p>
         </Link>
       </div>
     </div>

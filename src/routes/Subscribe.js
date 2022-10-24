@@ -30,8 +30,8 @@ export const Subscribe = () => {
           <p className="textGreen">
             bidrar till ett mer hållbart samhälle med mindre slöseri.
           </p>
-          <p className="subText1">99kr/mån</p>
-          <p className="subText2">Prenumerera!</p>
+          <p className="text1">99kr/mån</p>
+          <p className="text2">Prenumerera!</p>
           <div>
             <Link to="/">
               <p className="avbryt">AVBRYT</p>
