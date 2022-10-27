@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 330px;
+  height: 278px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modalClass {
+  align-items: center;
+}
+
+.modalText1 {
+  margin: 1rem;
+
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.modalText2 {
+  /*   width: 300px;
+  height: 43px; */
+
+  margin: 1rem;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+
+  text-align: center;
+  letter-spacing: -0.01px;
+
+  color: #000000;
+}
+
+.text2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.01px;
+  color: #ffffff;
+  width: 292px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #4c983e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.buttonClass {
+  display: flex;
+}
+
+.ja {
+  margin: 10px;
+  width: 142px;
+  height: 57px;
+
+  background: #4c983e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 18px;
+
+  text-align: center;
+  letter-spacing: -0.01px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nej {
+  margin: 10px;
+  width: 142px;
+  height: 57px;
+
+  background: #c02424;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 18px;
+  /* or 56% */
+
+  text-align: center;
+  letter-spacing: -0.01px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

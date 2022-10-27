@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Subscribe.css";
+import Dashboard from "../components/Modal/Dashboard.js";
 
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
@@ -32,7 +33,7 @@ export const Subscribe = () => {
           </p>
         </p>
         <p className="text1">99kr/mån</p>
-        <p className="text2">Prenumerera!</p>
+        <Dashboard />
         <div>
           <Link to="/">
             <p className="avbryt">AVBRYT</p>
@@ -42,3 +43,5 @@ export const Subscribe = () => {
     </div>
   );
 };
+
+/* export default Dashboard; */
