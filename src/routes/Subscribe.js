@@ -1,5 +1,5 @@
 import React from "react";
-import "./routes.css";
+import "./Subscribe.css";
 
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
@@ -26,18 +26,18 @@ export const Subscribe = () => {
       <div className="text">
         <p className="textBlack">
           Prenumererar du på Hemköp genom oss så får du förtur på alla
-          svinnvaror, notiser om varor med kort datum, och{" "}
+          svinnvaror, notiser om varor med kort datum, och
           <p className="textGreen">
             bidrar till ett mer hållbart samhälle med mindre slöseri.
           </p>
-          <p className="text1">99kr/mån</p>
-          <p className="text2">Prenumerera!</p>
-          <div>
-            <Link to="/">
-              <p className="avbryt">AVBRYT</p>
-            </Link>
-          </div>
         </p>
+        <p className="text1">99kr/mån</p>
+        <p className="text2">Prenumerera!</p>
+        <div>
+          <Link to="/">
+            <p className="avbryt">AVBRYT</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

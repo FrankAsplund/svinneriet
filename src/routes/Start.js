@@ -10,7 +10,7 @@ import "./Start.css";
 export const Start = () => {
   return (
     <div className="startBG">
-      <div className="container">
+      <div className="container1">
         <img id="logga" src={logga3} />
         <h1 id="logoName">Svinneriet</h1>
       </div>
@@ -25,8 +25,9 @@ export const Start = () => {
           <img id="recycle" src={recycle}></img>
           <img id="circlecutlery" src={circlecutlery}></img>
         </div>
+
         <Link to="/">
-          <p id="subText2">Kom igång!</p>
+          <h5 id="subText2">Kom igång!</h5>
         </Link>
       </div>
     </div>

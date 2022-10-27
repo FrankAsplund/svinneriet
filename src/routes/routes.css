@@ -1,4 +1,4 @@
-* {
+/* * {
   font-family: "Roboto";
 }
 
@@ -69,17 +69,13 @@
   margin-top: 1rem;
   width: 370px;
   height: 59px;
-  /* left: 15px;
-  top: 191px; */
-
-  /* background: #ffffff; */
   border: 2px solid #4c983e;
   border-radius: 25px;
-}
+} */
 
 /* Mobil vy */
 
-@media screen and (max-width: 895px) {
+/* @media screen and (max-width: 895px) {
   .homeStyle > h1 {
     text-align: center;
   }
@@ -88,22 +84,24 @@
     margin: 15px;
   }
 
+  .storeContainer {
+    justify-content: center;
+  }
+
   .storeGrid {
     margin: 10px;
     border: 0px solid #282c34;
-  }
+  } */
 
-  .container {
+/* .container {
     position: relative;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     top: 100px;
   }
 
   .storeImg {
-    position: absolute;
-    /* align-items: center; */
+
     border-radius: 25%;
     object-fit: contain;
 
@@ -117,16 +115,16 @@
   }
 
   .logoImg {
-    position: absolute;
+    position: sticky;
 
     left: 85px;
     top: -105px;
     width: 6rem;
     height: 6rem;
     z-index: 2;
-  }
+  } */
 
-  .storeGrid > img {
+/*   .storeGrid > img {
     align-items: center;
     border-radius: 25%;
     object-fit: contain;
@@ -147,18 +145,15 @@
     height: 59px;
     border: 2px solid #4c983e;
     border-radius: 25px;
-  }
-
-  /* .text {
-    display: flex;
-    justify-items: center;
   } */
 
+/* .text {
+    justify-content: center;
+  }
+
   .textBlack {
-    position: relative;
     width: 364px;
     height: 128px;
-    left: 19px;
     top: 200px;
 
     font-style: normal;
@@ -171,15 +166,18 @@
   }
 
   .textGreen {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
     color: #0d6932;
   }
 
   .text1 {
-    position: relative;
     width: 189px;
     height: 70px;
 
-    left: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,8 +198,6 @@
   }
 
   .text2 {
-    position: relative;
-
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -209,8 +205,6 @@
     text-align: center;
     letter-spacing: -0.01px;
     color: #ffffff;
-
-    /* left: 40px; */
     width: 292px;
     height: 57px;
     display: flex;
@@ -223,7 +217,8 @@
   }
 
   .avbryt {
-    position: relative;
+    text-decoration: none;
+    text-decoration-color: none;
 
     font-style: normal;
     font-weight: 600;
@@ -239,4 +234,4 @@
     justify-content: center;
     color: rgba(0, 0, 0, 0.4);
   }
-}
+} */

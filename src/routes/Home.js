@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import "./routes.css";
+import "./Home.css";
 
 import Navbar from "../components/Navbar/Navbar";
 
@@ -25,7 +25,7 @@ export const Home = () => {
         <img src={vector} id="vector" />
       </Link>
 
-      <input id="search" />
+      <input className="search" />
       <h1 style={{ color: "#0D6932" }}>
         Våra tillgängliga <br></br> butiker
       </h1>
