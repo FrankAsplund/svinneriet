@@ -25,7 +25,9 @@ export const Home = () => {
         <img src={vector} id="vector" />
       </Link>
 
-      <input className="search" />
+      <div className="search">
+        <input id="searchbar" />
+      </div>
       <h1 style={{ color: "#0D6932" }}>
         Våra tillgängliga <br></br> butiker
       </h1>

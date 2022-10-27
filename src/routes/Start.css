@@ -107,21 +107,20 @@
     width: 110px;
   }
 
-  /* Link {
-    justify-content: center;
-  } */
-
   a {
     text-decoration: none !important;
     text-decoration-line: none !important;
   }
 
+  .subText2Class {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
   #subText2 {
     position: relative;
-    /* margin: 0px; */
-    /* margin-block-start: 0px;
-    margin-block-end: 0px; */
-
     font-style: normal;
     font-weight: 600;
     font-size: 32px;

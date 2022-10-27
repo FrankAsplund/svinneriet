@@ -26,9 +26,11 @@ export const Start = () => {
           <img id="circlecutlery" src={circlecutlery}></img>
         </div>
 
-        <Link to="/">
-          <h5 id="subText2">Kom igång!</h5>
-        </Link>
+        <div className="subText2Class">
+          <Link to="/">
+            <h5 id="subText2">Kom igång!</h5>
+          </Link>
+        </div>
       </div>
     </div>
   );
