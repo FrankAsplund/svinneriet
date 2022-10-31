@@ -5,6 +5,7 @@ import { Home } from "./routes/Home";
 import { Subscribe } from "./routes/Subscribe";
 import { Start } from "./routes/Start.js";
 import { Pay } from "./routes/Pay.js";
+import { Done } from "./routes/Done.js";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/Subscribe" element={<Subscribe />} />
       <Route path="/Start" element={<Start />} />
       <Route path="/Pay" element={<Pay />} />
+      <Route path="/Done" element={<Done />} />
       <Route path="/settings" element={<Home />} />
     </Routes>
   );

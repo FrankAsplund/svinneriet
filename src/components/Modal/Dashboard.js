@@ -30,9 +30,6 @@ class Dashboard extends Component {
             <p className="modalText2">
               99:- kommer dras på autogiro varje månad, är du säker?
             </p>
-            <div className="buttonClass">
-              <button className="ja">Ja</button>
-            </div>
           </div>
         </Modal>
         <button type="button" className="text2" onClick={this.showModal}>
