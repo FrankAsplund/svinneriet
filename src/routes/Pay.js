@@ -46,9 +46,35 @@ export const Pay = () => {
                 id="inputCard"
               />
             </label>
+            </form>
+            </div>
+            <div className="secondForm">
+            <form>
+            <label className="date">
+              Expiry date
+              <input
+                type="text"
+                name="date"
+                placeholder="04/23"
+                id="inputDate"
+              />
+            </label>
+            <label className="CVC">
+              CVC
+              <input
+                type="text"
+                name="cvc"
+                placeholder="315"
+                id="inputCVC"
+              />
+            </label>
+            
           </form>
-        </div>
-      </div>
+
+          <button type="button" id="submit">Lägg till</button> 
+          </div>
+          </div>
+      
     </div>
   );
 };

@@ -20,6 +20,7 @@
   height: 48px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  margin: 0px 0px 10px 0px;
 }
 
 .inputInfo label {
@@ -35,4 +36,76 @@
 .inputInfo ::placeholder {
   color: #000000;
   letter-spacing: -0.41px;
+  padding: 4%;
+}
+
+#inputName {
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+}
+
+#inputCard {
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+}
+
+.secondForm {
+  margin-left: 10px;
+}
+
+.secondForm form {
+  display: flex;
+  flex-direction: row;
+}
+
+.secondForm input {
+  display: flex;
+  box-sizing: border-box;
+  width: 144px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 0px 0px 10px 0px;
+}
+
+#inputDate {
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+  margin-right: 30px;
+}
+
+#inputCVC {
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: -0.41px;
+  margin-right: 30px;
+}
+
+.secondForm label {
+  font-weight: 500;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.secondForm ::placeholder {
+  color: #000000;
+  letter-spacing: -0.41px;
+  padding: 10%;
+}
+
+#submit {
+  color: #fff;
+  background: #4C983E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 292px;
+  height: 57px;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 13%;
 }
