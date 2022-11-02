@@ -1,0 +1,38 @@
+.settings-header {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  font-weight: 600px;
+}
+
+.address-info {
+  width: 120px;
+}
+
+.settingsh1 {
+  display: inline;
+  margin: 0px 26px 0px 26px;
+}
+
+.settingsh2 {
+  display: inline;
+  margin: 0px 36% 0px 26px;
+}
+
+.settings-info p {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0.5;
+  margin: 30px 0px 40px 40px;
+}
+
+.settings-info a {
+  font-weight: 500;
+  font-size: 17px;
+  color: #4c983e;
+  margin-left: 5%;
+}
+
+.test {
+  display: flex;
+}

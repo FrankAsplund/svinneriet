@@ -5,6 +5,7 @@ import "./Navbar.css";
 import logga2 from "../assets/logga2.png";
 import logga3 from "../assets/logga3.png";
 import hamburger from "../assets/hamburger.png";
+import Menu from "../Hamburger/Menu.js";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
           <img className="logga" src={logga3} />
         </Link>
         <h2 class="logoName">Svinneriet</h2>
-        <img className="hamburger" src={hamburger} />
+        <Menu />
       </div>
     </div>
   );

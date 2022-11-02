@@ -1,0 +1,121 @@
+.hamburger {
+  position: relative;
+  box-sizing: border-box;
+  width: 71px;
+  height: 71px;
+  margin-left: 10px;
+}
+
+.hamburger-main {
+  top: 50%;
+  left: 200px;
+
+  position: fixed;
+
+  transform: translate(-50%, -50%);
+
+  width: 308px;
+  height: 440px;
+
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px 0px 10px 10px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+/* User */
+
+.user {
+  display: flex;
+  height: 90px;
+}
+
+#dog {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+#mail {
+  margin: 15px;
+  margin-top: 27px;
+  width: 94px;
+  height: 17px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#close {
+  position: relative;
+  left: 30px;
+  top: 35px;
+  width: 30px;
+  height: 20px;
+}
+
+/* User */
+
+.modalText1 {
+  margin: 1rem;
+
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.hamTest {
+  width: 0px;
+  height: 0px;
+}
+
+.box {
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-items: center;
+  display: flex;
+  width: 285px;
+  height: 60px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2d2d2d;
+  border-radius: 5px;
+}
+
+.boxImg {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.boxText {
+  width: 117px;
+  height: 26px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  /* line-height: 19px; */
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
