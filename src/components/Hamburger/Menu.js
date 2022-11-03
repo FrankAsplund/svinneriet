@@ -8,6 +8,7 @@ import settings from "../assets/settings.png";
 import bicycle from "../assets/bicycle.png";
 import dog from "../assets/dog.png";
 import close from "../assets/close.png";
+import { Link } from "react-router-dom";
 
 class Menu extends Component {
   constructor() {
@@ -32,28 +33,33 @@ class Menu extends Component {
       <main>
         <Hamburger show={this.state.show} handleClose={this.hideModal}>
           <div className="hamClass">
-            <div className="user">
-              <img src={dog} id="dog"></img>
-              <p id="mail">
-                Frank_asplund <br></br>@hotmail.com
-              </p>
-              <img src={close} id="close"></img>
+            <div className="boxContainer">
+              <Link to="/Start">
+                <div className="box">
+                  <img src={home} className="boxImg"></img>
+                  <p className="boxText">Hem</p>
+                </div>
+              </Link>
             </div>
-            <div className="box">
-              <img src={home} className="boxImg"></img>
-              <p className="boxText">Hem</p>
-            </div>
-            <div className="box">
-              <img src={shops} className="boxImg"></img>
-              <p className="boxText">Butiker</p>
+            <div className="boxContainer">
+              <Link to="/">
+                <div className="box">
+                  <img src={shops} className="boxImg"></img>
+                  <p className="boxText">Butiker</p>
+                </div>
+              </Link>
             </div>
             <div className="box">
               <img src={subs} className="boxImg"></img>
               <p className="boxText">Prenumerationer</p>
             </div>
-            <div className="box">
-              <img src={settings} className="boxImg"></img>
-              <p className="boxText">Inställningar</p>
+            <div className="boxContainer">
+              <Link to="/Settings">
+                <div className="box">
+                  <img src={settings} className="boxImg"></img>
+                  <p className="boxText">Inställningar</p>
+                </div>
+              </Link>
             </div>
             <div className="box">
               <img src={bicycle} className="boxImg"></img>

@@ -1,6 +1,8 @@
 import "./Hamburger.css";
 import React from "react";
-import { Link } from "react-router-dom";
+
+import dog from "../assets/dog.png";
+import close from "../assets/close.png";
 
 const Hamburger = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -8,12 +10,14 @@ const Hamburger = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="hamburger-main">
-        {children}
-        <div className="buttonClass1">
-          <button className="nej" type="button" onClick={handleClose}>
-            Close
-          </button>
+        <div className="user">
+          <img src={dog} id="dog"></img>
+          <p id="mail">
+            Frank_asplund <br></br>@hotmail.com
+          </p>
+          <img src={close} id="close" onClick={handleClose}></img>
         </div>
+        {children}
       </section>
     </div>
   );

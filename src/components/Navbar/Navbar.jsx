@@ -15,7 +15,9 @@ const Navbar = () => {
           <img className="logga" src={logga3} />
         </Link>
         <h2 class="logoName">Svinneriet</h2>
-        <Menu />
+        <div className="hamburgerNav">
+          <Menu />
+        </div>
       </div>
     </div>
   );
