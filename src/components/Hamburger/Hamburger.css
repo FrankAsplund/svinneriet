@@ -1,11 +1,13 @@
 .hamburger {
-  position: relative;
   box-sizing: border-box;
   width: 71px;
   height: 71px;
-  margin-left: 10px;
-  margin-right: 40px;
-  /* padding-right: 20px; */
+}
+
+.hamburgerNav {
+  position: absolute;
+  right: 10px;
+  /* margin-right: 10px; */
 }
 
 .hamburger-main {
@@ -20,8 +22,7 @@
   width: 308px;
   height: auto;
   padding-bottom: 30px;
-
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 10px 0px 10px 10px;
 }
 
@@ -87,6 +88,8 @@
 }
 
 .hamTest {
+  width: 0px;
+  height: 0px;
   border-style: none;
   background-color: rgba(30, 143, 255, 0);
 }

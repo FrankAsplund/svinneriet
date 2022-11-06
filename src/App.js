@@ -7,6 +7,8 @@ import { Start } from "./routes/Start.js";
 import { Pay } from "./routes/Pay.js";
 import { Done } from "./routes/Done.js";
 import { Settings } from "./routes/Settings.js";
+import { ActiveSubs } from "./routes/ActiveSubs";
+
 function App() {
   return (
     <Routes>
@@ -15,6 +17,7 @@ function App() {
       <Route path="/Start" element={<Start />} />
       <Route path="/Pay" element={<Pay />} />
       <Route path="/Done" element={<Done />} />
+      <Route path="/ActiveSubs" element={<ActiveSubs />} />
       <Route path="/Settings" element={<Settings />} />
     </Routes>
   );

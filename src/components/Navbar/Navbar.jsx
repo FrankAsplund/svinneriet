@@ -9,14 +9,16 @@ import Menu from "../Hamburger/Menu.js";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbarItems">
-        <Link to="/">
-          <img className="logga" src={logga3} />
-        </Link>
-        <h2 class="logoName">Svinneriet</h2>
-        <div className="hamburgerNav">
-          <Menu />
+    <div className="navContainer">
+      <div className="navbar">
+        <div className="navbarItems">
+          <Link to="/">
+            <img className="logga" src={logga3} />
+          </Link>
+          <h2 class="logoName">Svinneriet</h2>
+          <div className="hamburgerNav">
+            <Menu />
+          </div>
         </div>
       </div>
     </div>

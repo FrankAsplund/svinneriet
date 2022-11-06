@@ -10,10 +10,9 @@
   margin: 15px;
 }
 
-/* .storeGrid {
-  margin: 10px;
-  border: 0px solid #282c34;
-} */
+.storeGrid {
+  padding-left: 40px;
+}
 
 .logoImg {
   position: absolute;
@@ -64,11 +63,6 @@
 
   #vector {
     margin: 15px;
-  }
-
-  .storeContainer {
-    display: flex;
-    justify-content: center;
   }
 
   /*   .storeGrid {

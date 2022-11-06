@@ -49,10 +49,12 @@ class Menu extends Component {
                 </div>
               </Link>
             </div>
-            <div className="box">
-              <img src={subs} className="boxImg"></img>
-              <p className="boxText">Prenumerationer</p>
-            </div>
+            <Link to="/ActiveSubs">
+              <div className="box">
+                <img src={subs} className="boxImg"></img>
+                <p className="boxText">Prenumerationer</p>
+              </div>
+            </Link>
             <div className="boxContainer">
               <Link to="/Settings">
                 <div className="box">
@@ -67,9 +69,9 @@ class Menu extends Component {
             </div>
           </div>
         </Hamburger>
-        <button type="button" className="hamTest" onClick={this.showModal}>
-          <img className="hamburger" src={hamburger} />
-        </button>
+        {/* <button type="button" className="hamTest" onClick={this.showModal}> */}
+        <img className="hamburger" src={hamburger} onClick={this.showModal} />
+        {/* </button> */}
       </main>
     );
   }
