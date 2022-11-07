@@ -23,15 +23,33 @@ export const Settings = () => {
         <div className="settings-info">
           <h1 className="settingsh1"> Betalningsmetod </h1>
           <a href="/Pay">ÄNDRA </a>
-          <div className="test">
+          <div className="pic1">
             <img src={creditcardsmall} id="creditcardsmall"></img>
             <p className="credit-info"> **** **** **** 4747 </p>
           </div>
           <h1 className="settingsh2"> Address </h1>
           <a href="/Pay">ÄNDRA </a>
-          <p className="address-info">
-            Frank Asplund Randomgata 15 Stockholm Våning 7 Nr 7
-          </p>
+          <div className="pic2">
+          <img src={homesymbol} id="homesymbol"></img>
+          <div className="address-info">
+          <ul>
+            <li>Frank Asplund </li>
+            <li>
+            Randomgata 15
+            </li>
+            <li>
+            Stockholm
+            </li>
+            <li>
+              Våning 7 
+            </li>
+            <li>
+            Nr 7
+              </li>
+          </ul>
+          </div>
+          </div>
+          <button type="button" id="saveSettings">Lägg till</button>
         </div>
       </div>
     </div>

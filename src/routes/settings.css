@@ -6,7 +6,16 @@
 }
 
 .address-info {
-  width: 120px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.address-info ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.address-info p {
+  margin: 30px 0px 40px 0px;
 }
 
 .settingsh1 {
@@ -23,7 +32,6 @@
   font-weight: 500;
   font-size: 17px;
   opacity: 0.5;
-  margin: 30px 0px 40px 40px;
 }
 
 .settings-info a {
@@ -33,6 +41,41 @@
   margin-left: 5%;
 }
 
-.test {
+.pic1 {
   display: flex;
+}
+
+#creditcardsmall {
+  width: 30px;
+  height: 30px;
+  margin: 25px 0px 0px 30px;
+}
+
+.credit-info  {
+  margin: 30px 0px 40px 20px;
+}
+
+#homesymbol {
+  width: 45px;
+  height: 45px;
+  margin: 25px 0px 0px 30px;
+}
+
+.pic2 {
+  display: flex;
+  margin: 20px 0px 0px 0px;
+}
+
+#saveSettings {
+  color: #fff;
+  background: #4C983E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 292px;
+  height: 57px;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40%;
+  margin-left: 13%;
 }
