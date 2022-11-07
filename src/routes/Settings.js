@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import vector from "../components/assets/vector.png";
 
+//test kommentar
+
 export const Settings = () => {
   return (
     <div className="subStyle">
