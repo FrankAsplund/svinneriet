@@ -1,14 +1,33 @@
-import React, { Component } from "react";
-import "./Subscribe.css";
-import Dashboard from "../components/Modal/Dashboard.js";
-
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import axios from "axios";
+
+import "./Subscribe.css";
+
+import Dashboard from "../components/Modal/Dashboard.js";
 import Navbar from "../components/Navbar/Navbar";
 import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
 import logga2 from "../components/assets/logga2.png";
 
 export const Subscribe = () => {
+  const { id } = useParams();
+  /* const [post, SetPost] = useState({}); */
+  const [store, setStore] = useState({});
+
+  useEffect(() => {
+    const fetch = async () => {
+      try {
+        const { data } = await axios.get(`http://localhost:8000/stores/${id}`);
+        setStore(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetch();
+  }, []);
+
   return (
     <div className="subStyle">
       <Navbar />
@@ -19,10 +38,17 @@ export const Subscribe = () => {
         </Link>
       </div>
 
-      <div className="container">
+      <article>
+        <div className="container">
+          <img className="logoImg" src={logga2} />
+          <img className="storeImg" src={store.img} />
+        </div>
+      </article>
+
+      {/* <div className="container">
         <img className="logoImg" src={logga2} />
         <img className="storeImg" src={hemkop} />
-      </div>
+      </div> */}
 
       <div className="text">
         <p className="textBlack">

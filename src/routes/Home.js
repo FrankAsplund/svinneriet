@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import axios from "axios";
 
 import { Link } from "react-router-dom";
 import "./Home.css";
@@ -22,11 +23,22 @@ import { Subscribe } from "./Subscribe.js"; */
 export const Home = () => {
   /* JSON-server */
 
-  /* const API_URL = "http://localhost:8000/stores"; */
   const [stores, setStores] = useState([]);
   /* const [error, setError] = useState(null); */
 
   useEffect(() => {
+    const fetch = async () => {
+      try {
+        const { data } = await axios.get("http://localhost:8000/stores");
+        setStores(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetch();
+  }, []);
+
+  /* useEffect(() => {
     StoresGet();
   }, []);
 
@@ -36,7 +48,9 @@ export const Home = () => {
       .then((result) => {
         setStores(result);
       });
-  };
+    }; */
+
+  /* JSON-server */
 
   return (
     <div className="homeStyle">
@@ -53,19 +67,23 @@ export const Home = () => {
         Våra tillgängliga <br></br> butiker
       </h1>
 
-      <Link to="/Subscribe">
-        <img src={hemkop} id="hemkop"></img>
-      </Link>
-
       <div className="storeGrid">
+        {stores.map((store) => (
+          <article key={store.id}>
+            <Link to={`/Subscribe/${store.id}`}>
+              <StoreCard store={store} />
+            </Link>
+          </article>
+        ))}
+      </div>
+
+      {/* <div className="storeGrid">
         {stores.map((store) => (
           <StoreCard store={store} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
-
-  /* JSON-server */
 
   /* return (
     <div className="homeStyle">
