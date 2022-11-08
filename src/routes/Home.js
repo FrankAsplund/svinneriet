@@ -10,9 +10,9 @@ import { StoreCard } from "../components/StoreCard/StoreCard";
 import vector from "../components/assets/vector.png";
 
 /* import ICA from "../components/assets/ICA.png";
-import coop from "../components/assets/coop.png";
+import coop from "../components/assets/coop.png"; */
 import hemkop from "../components/assets/hemkop.png";
-import citygross from "../components/assets/citygross.png";
+/* import citygross from "../components/assets/citygross.png";
 import pressbyran from "../components/assets/pressbyran.png";
 import willys from "../components/assets/willys.png";
 import lidl from "../components/assets/lidl.png";
@@ -52,6 +52,10 @@ export const Home = () => {
       <h1 style={{ color: "#0D6932" }}>
         Våra tillgängliga <br></br> butiker
       </h1>
+
+      <Link to="/Subscribe">
+        <img src={hemkop} id="hemkop"></img>
+      </Link>
 
       <div className="storeGrid">
         {stores.map((store) => (

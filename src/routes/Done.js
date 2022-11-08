@@ -33,7 +33,7 @@ export const Done = () => {
         <p id="textTack">Tack för ditt köp!</p>
         <p id="textFrom">
           Från och med nu kommer du få en notifikation från denna app när du har
-          fått förtur på svinnvaror från Hemköp
+          fått förtur på svinnvaror från Hemköp!
         </p>
         <p id="textStacken">
           Vi alla är ansvariga för att dra vårt strå till stacken. Med detta köp
