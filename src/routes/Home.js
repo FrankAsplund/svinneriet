@@ -1,3 +1,13 @@
+/* import ICA from "../components/assets/ICA.png";
+import coop from "../components/assets/coop.png";
+import hemkop from "../components/assets/hemkop.png";
+import citygross from "../components/assets/citygross.png";
+import pressbyran from "../components/assets/pressbyran.png";
+import willys from "../components/assets/willys.png";
+import lidl from "../components/assets/lidl.png";
+import seveneleven from "../components/assets/seveneleven.png";
+import { Subscribe } from "./Subscribe.js"; */
+
 import { useEffect, useState } from "react";
 import React from "react";
 import axios from "axios";
@@ -10,18 +20,8 @@ import { StoreCard } from "../components/StoreCard/StoreCard";
 
 import vector from "../components/assets/vector.png";
 
-/* import ICA from "../components/assets/ICA.png";
-import coop from "../components/assets/coop.png"; */
-import hemkop from "../components/assets/hemkop.png";
-/* import citygross from "../components/assets/citygross.png";
-import pressbyran from "../components/assets/pressbyran.png";
-import willys from "../components/assets/willys.png";
-import lidl from "../components/assets/lidl.png";
-import seveneleven from "../components/assets/seveneleven.png";
-import { Subscribe } from "./Subscribe.js"; */
-
 export const Home = () => {
-  /* JSON-server */
+  /* Axios GET request */
 
   const [stores, setStores] = useState([]);
   /* const [error, setError] = useState(null); */
@@ -37,6 +37,8 @@ export const Home = () => {
     };
     fetch();
   }, []);
+
+  /* JSON-server */
 
   /* useEffect(() => {
     StoresGet();
@@ -84,8 +86,9 @@ export const Home = () => {
       </div> */}
     </div>
   );
+};
 
-  /* return (
+/* return (
     <div className="homeStyle">
       <Navbar />
 
@@ -115,4 +118,3 @@ export const Home = () => {
       </div>
     </div>
   ); */
-};

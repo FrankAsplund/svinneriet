@@ -12,8 +12,8 @@ import vector from "../components/assets/vector.png";
 import logga2 from "../components/assets/logga2.png";
 
 export const Subscribe = () => {
+  /* fetch the correct store page based on the id */
   const { id } = useParams();
-  /* const [post, SetPost] = useState({}); */
   const [store, setStore] = useState({});
 
   useEffect(() => {
@@ -27,6 +27,24 @@ export const Subscribe = () => {
     };
     fetch();
   }, []);
+
+  /* Axios POST request */
+
+  const postData = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:8000/activeSubs", {
+        id: store.id,
+        title: store.title,
+        img: store.img,
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
 
   return (
     <div className="subStyle">
@@ -45,11 +63,6 @@ export const Subscribe = () => {
         </div>
       </article>
 
-      {/* <div className="container">
-        <img className="logoImg" src={logga2} />
-        <img className="storeImg" src={hemkop} />
-      </div> */}
-
       <div className="text">
         <p className="textBlack">
           Prenumererar du på Hemköp genom oss så får du förtur på alla
@@ -58,8 +71,12 @@ export const Subscribe = () => {
             bidrar till ett mer hållbart samhälle med mindre slöseri.
           </p>
         </p>
+
+        <button id="tempBtn" onClick={postData}>
+          Temporär ja-knapp
+        </button>
         <p className="text1">99kr/mån</p>
-        <Dashboard />
+        <Dashboard postData={postData} />
         <div>
           <Link to="/">
             <p className="avbryt">AVBRYT</p>

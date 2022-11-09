@@ -15,17 +15,17 @@ export const Done = () => {
 
       <div>
         <Link to="/Subscribe">
-          <img src={vector} id="vector"></img>
+          <img src={vector} id="vector" alt="back symbol"></img>
         </Link>
       </div>
 
       <div className="center">
         <div className="confirmContainer">
-          <img className="logoImg1" src={logga2} />
-          <img className="storeImg1" src={hemkop} />
+          <img className="logoImg1" src={logga2} alt="logo" />
+          <img className="storeImg1" src={hemkop} alt="store logo" />
           <p id="confirmText1">Prenumeration på Hemköp</p>
           <p id="confirmText2">99kr/mån</p>
-          <img className="confirmImg1" src={confirm} />
+          <img className="confirmImg1" src={confirm} alt="confirm symbol" />
         </div>
       </div>
 

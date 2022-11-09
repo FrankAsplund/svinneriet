@@ -2,7 +2,7 @@ import "./Modal.css";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Modal = ({ handleClose, show, children }) => {
+const Modal = ({ handleClose, show, children, postData }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   return (
@@ -10,6 +10,9 @@ const Modal = ({ handleClose, show, children }) => {
       <section className="modal-main">
         {children}
         <div className="buttonClass">
+          <button id="tempBtn" onClick={postData}>
+            Temporär ja-knapp
+          </button>
           <Link to="/Done">
             <button className="ja">Ja</button>
           </Link>

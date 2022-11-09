@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./activesubs.css";
-
 import { Link } from "react-router-dom";
+import axios from "axios";
+
 import Navbar from "../components/Navbar/Navbar";
 import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
@@ -10,6 +11,34 @@ import confirm from "../components/assets/confirm.png";
 import add from "../components/assets/add.png";
 
 export const ActiveSubs = () => {
+  const [subs, setSubs] = useState([]);
+
+  useEffect(() => {
+    const fetch = async () => {
+      try {
+        const { data } = await axios.get("http://localhost:8000/activeSubs");
+        setSubs(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetch();
+  }, []);
+
+  /* Axios Delete request */
+
+  const deleteData = (id) => {
+    axios
+      .delete(`http://localhost:8000/activeSubs/${id}`)
+      .then(function (response) {
+        console.log("Deleted", response);
+        useEffect();
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="activesubStyle">
       <Navbar />
@@ -27,17 +56,41 @@ export const ActiveSubs = () => {
         </h1>
       </div>
 
-      <div className="centerSub">
-        <div className="subContainer">
-          <img className="logoImgSub" src={logga2} />
-          <img className="storeImgSub" src={hemkop} />
-          <p id="confirmTextSub">Prenumeration på Hemköp</p>
-          <p id="confirmTextSub1">99kr/mån</p>
-          <p id="dateText">Start: 09/12-22</p>
-          <p id="cancelText">AVBRYT</p>
-          <img className="confirmImgSub" src={confirm} />
-        </div>
+      <div className="subGrid">
+        {subs.map((sub) => (
+          <article key={sub.id}>
+            <div className="centerSub">
+              <div className="subContainer">
+                <img className="logoImgSub" src={logga2} />
+                <img className="storeImgSub" src={sub.img} />
+                <p id="confirmTextSub">
+                  Prenumeration på
+                  <br />
+                  {sub.title}
+                </p>
+                <p id="confirmTextSub1">99kr/mån</p>
+                <p id="dateText">Start: 09/12-22</p>
+                <button id="cancelText" onClick={() => deleteData(sub.id)}>
+                  AVBRYT
+                </button>
+                <img className="confirmImgSub" src={confirm} />
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
+
+      {/* <div className="centerSub">
+          <div className="subContainer">
+            <img className="logoImgSub" src={logga2} />
+            <img className="storeImgSub" src={hemkop} />
+            <p id="confirmTextSub">Prenumeration på Hemköp</p>
+            <p id="confirmTextSub1">99kr/mån</p>
+            <p id="dateText">Start: 09/12-22</p>
+            <p id="cancelText">AVBRYT</p>
+            <img className="confirmImgSub" src={confirm} />
+          </div>
+        </div> */}
 
       <div className="addClass">
         <Link to="/">
