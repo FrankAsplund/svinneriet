@@ -17,7 +17,7 @@ function App() {
       <Route path="/Subscribe/:id" element={<Subscribe />} />
       <Route path="/Start" element={<Start />} />
       <Route path="/Pay" element={<Pay />} />
-      <Route path="/Done" element={<Done />} />
+      <Route path="/Done/:id" element={<Done />} />
       <Route path="/ActiveSubs" element={<ActiveSubs />} />
       <Route path="/Settings" element={<Settings />} />
     </Routes>

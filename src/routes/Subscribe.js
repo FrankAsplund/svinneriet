@@ -7,7 +7,6 @@ import "./Subscribe.css";
 
 import Dashboard from "../components/Modal/Dashboard.js";
 import Navbar from "../components/Navbar/Navbar";
-import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
 import logga2 from "../components/assets/logga2.png";
 
@@ -58,8 +57,8 @@ export const Subscribe = () => {
 
       <article>
         <div className="container">
-          <img className="logoImg" src={logga2} />
-          <img className="storeImg" src={store.img} />
+          <img className="logoImg" src={logga2} alt="site logo" />
+          <img className="storeImg" src={store.img} alt="store logo" />
         </div>
       </article>
 
@@ -76,7 +75,7 @@ export const Subscribe = () => {
           Temporär ja-knapp
         </button>
         <p className="text1">99kr/mån</p>
-        <Dashboard postData={postData} />
+        <Dashboard />
         <div>
           <Link to="/">
             <p className="avbryt">AVBRYT</p>
