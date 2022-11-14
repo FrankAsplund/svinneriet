@@ -8,6 +8,7 @@ import { Pay } from "./routes/Pay.js";
 import { Done } from "./routes/Done.js";
 import { Settings } from "./routes/Settings.js";
 import { ActiveSubs } from "./routes/ActiveSubs";
+import { Pickup } from "./routes/Pickup";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/Done" element={<Done />} />
       <Route path="/ActiveSubs" element={<ActiveSubs />} />
       <Route path="/Settings" element={<Settings />} />
+      <Route path="/Pickup" element={<Pickup />} />
     </Routes>
   );
 }
