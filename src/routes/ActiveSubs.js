@@ -15,6 +15,10 @@ export const ActiveSubs = () => {
   const [subs, setSubs] = useState([]);
   /* const navigate = useNavigate(); */
 
+  useEffect(() => {
+    SubsGet();
+  });
+
   const SubsGet = () => {
     const fetch = async () => {
       try {
@@ -26,22 +30,6 @@ export const ActiveSubs = () => {
     };
     fetch();
   };
-
-  useEffect(() => {
-    SubsGet();
-  });
-
-  /* useEffect(() => {
-    const fetch = async () => {
-      try {
-        const { data } = await axios.get("http://localhost:8000/activeSubs");
-        setSubs(data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    fetch();
-  }, []); */
 
   /* Axios Delete request */
 
@@ -55,6 +43,7 @@ export const ActiveSubs = () => {
       .catch(function (error) {
         console.log(error);
       });
+    SubsGet();
   };
 
   return (

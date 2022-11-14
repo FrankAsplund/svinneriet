@@ -48,14 +48,14 @@
       "img": "../images/assets/ICA.png"
     },
     {
-      "id": 5,
-      "title": "Pressbyrån",
-      "img": "../images/assets/pressbyran.png"
-    },
-    {
       "id": 2,
       "title": "Coop",
       "img": "../images/assets/coop.png"
+    },
+    {
+      "id": 6,
+      "title": "Willys",
+      "img": "../images/assets/willys.png"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -14,6 +15,8 @@ export const Subscribe = () => {
   /* fetch the correct store page based on the id */
   const { id } = useParams();
   const [store, setStore] = useState({});
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetch = async () => {
@@ -39,6 +42,7 @@ export const Subscribe = () => {
       })
       .then(function (response) {
         console.log(response);
+        navigate(`/Done/${store.id}`);
       })
       .catch(function (error) {
         console.log(error);
@@ -50,9 +54,9 @@ export const Subscribe = () => {
       <Navbar />
 
       <div>
-        <Link to="/">
+        <button onClick={() => navigate(-1)}>
           <img src={vector} id="vector"></img>
-        </Link>
+        </button>
       </div>
 
       <article>
@@ -70,7 +74,6 @@ export const Subscribe = () => {
             bidrar till ett mer hållbart samhälle med mindre slöseri.
           </p>
         </p>
-
         <button id="tempBtn" onClick={postData}>
           Temporär ja-knapp
         </button>
@@ -85,5 +88,3 @@ export const Subscribe = () => {
     </div>
   );
 };
-
-/* export default Dashboard; */

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import "./Done.css";
@@ -15,6 +16,8 @@ export const Done = () => {
   /* fetch the correct store page based on the id */
   const { id } = useParams();
   const [store, setStore] = useState({});
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetch = async () => {
@@ -33,9 +36,9 @@ export const Done = () => {
       <Navbar />
 
       <div>
-        <Link to="/Subscribe/">
-          <img src={vector} id="vector" alt="back symbol"></img>
-        </Link>
+        <button onClick={() => navigate(-1)}>
+          <img src={vector} id="vector"></img>
+        </button>
       </div>
 
       <div className="center">
