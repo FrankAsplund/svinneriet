@@ -1,3 +1,203 @@
+button {
+  border-width: 0;
+  border-style: none;
+}
+
+.h1Style {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.h1Style > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.01px;
+}
+
+.subGrid {
+  /* display: grid; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
+
+.centerSub {
+  margin: 15px;
+}
+
+.subContainer {
+  position: relative;
+
+  margin: 10px;
+
+  width: 364px;
+  height: 168px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+#dateText {
+  position: relative;
+  width: 152px;
+  height: 23px;
+
+  left: 10px;
+  top: -115px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  z-index: 2;
+
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#cancelText {
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  height: 31px;
+  left: 200px;
+  top: -185px;
+
+  background: #f1f1f1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01px;
+
+  color: #ff0000;
+}
+
+#confirmTextSub {
+  position: relative;
+  width: 242px;
+  height: 32px;
+  top: -130px;
+  left: 130px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000000;
+}
+
+#confirmTextSub1 {
+  position: relative;
+  width: 174px;
+  height: 24px;
+  top: -120px;
+  left: 160px;
+  text-align: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+
+  letter-spacing: -0.01px;
+  color: #649d7b;
+}
+
+#vector {
+  margin: 15px;
+}
+
+.storeImgSub {
+  position: relative;
+  border-radius: 25%;
+  object-fit: contain;
+  bottom: -20px;
+  left: -60px;
+
+  width: 110px;
+  height: 120px;
+
+  z-index: 1;
+}
+
+.logoImgSub {
+  position: relative;
+  left: -30px;
+  top: -70px;
+  width: 83px;
+  height: 83px;
+  z-index: 2;
+}
+
+.confirmImgSub {
+  position: relative;
+  top: -150px;
+  left: 240px;
+  width: 40px;
+  height: 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.addClass {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#add {
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+}
+
+.textSub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 60px;
+}
+
+.startSub {
+  width: 292px;
+  height: 57px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 50px;
+
+  text-align: center;
+  letter-spacing: -0.01px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #4c983e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 895px) {
   /* test kommentar */
   .h1Style {
@@ -16,9 +216,15 @@
     letter-spacing: -0.01px;
   }
 
+  .subGrid {
+    flex-direction: column;
+  }
+
   .centerSub {
     display: flex;
     justify-content: center;
+
+    margin: 15px;
   }
 
   .subContainer {
@@ -57,7 +263,7 @@
     width: 100px;
     height: 31px;
     left: 200px;
-    top: -170px;
+    top: -185px;
 
     background: #f1f1f1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -67,7 +273,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
     text-align: center;
     letter-spacing: -0.01px;
 
@@ -122,8 +328,6 @@
 
     width: 110px;
     height: 120px;
-    /* width: 8rem;
-    height: 8rem; */
 
     z-index: 1;
   }
@@ -139,8 +343,8 @@
 
   .confirmImgSub {
     position: relative;
-    top: -200px;
-    left: 340px;
+    top: -150px;
+    left: 240px;
     width: 40px;
     height: 40px;
 

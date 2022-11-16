@@ -1,0 +1,51 @@
+{
+  "stores": [
+    {
+      "id": 1,
+      "title": "ICA",
+      "img": "../images/assets/ICA.png"
+    },
+    {
+      "id": 2,
+      "title": "Coop",
+      "img": "../images/assets/coop.png"
+    },
+    {
+      "id": 3,
+      "title": "Hemköp",
+      "img": "../images/assets/hemkop.png"
+    },
+    {
+      "id": 4,
+      "title": "Citygross",
+      "img": "../images/assets/citygross.png"
+    },
+    {
+      "id": 5,
+      "title": "Pressbyrån",
+      "img": "../images/assets/pressbyran.png"
+    },
+    {
+      "id": 6,
+      "title": "Willys",
+      "img": "../images/assets/willys.png"
+    },
+    {
+      "id": 7,
+      "title": "Lidl",
+      "img": "../images/assets/lidl.png"
+    },
+    {
+      "id": 8,
+      "title": "Seven Eleven",
+      "img": "../images/assets/seveneleven.png"
+    }
+  ],
+  "activeSubs": [
+    {
+      "id": 1,
+      "title": "ICA",
+      "img": "../images/assets/ICA.png"
+    }
+  ]
+}

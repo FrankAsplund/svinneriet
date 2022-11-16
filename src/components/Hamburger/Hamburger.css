@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: 71px;
   height: 71px;
+  cursor: pointer;
 }
 
 .hamburgerNav {
@@ -94,7 +95,8 @@
 }
 
 .box {
-  padding: 5px;
+  padding: 3px;
+  margin-top: 3px;
   margin-left: 5px;
   margin-right: 5px;
   align-items: center;

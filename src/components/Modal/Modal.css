@@ -65,6 +65,7 @@
 }
 
 .text2 {
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -86,6 +87,10 @@
 .buttonClass {
   padding-top: 10px;
   display: flex;
+}
+
+.buttonClass > button {
+  cursor: pointer;
 }
 
 .ja {
