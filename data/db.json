@@ -46,16 +46,6 @@
       "id": 1,
       "title": "ICA",
       "img": "../images/assets/ICA.png"
-    },
-    {
-      "id": 2,
-      "title": "Coop",
-      "img": "../images/assets/coop.png"
-    },
-    {
-      "id": 6,
-      "title": "Willys",
-      "img": "../images/assets/willys.png"
     }
   ]
 }

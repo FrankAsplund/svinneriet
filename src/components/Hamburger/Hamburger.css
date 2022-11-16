@@ -95,7 +95,8 @@
 }
 
 .box {
-  padding: 5px;
+  padding: 3px;
+  margin-top: 3px;
   margin-left: 5px;
   margin-right: 5px;
   align-items: center;

@@ -74,9 +74,6 @@ export const Subscribe = () => {
             bidrar till ett mer hållbart samhälle med mindre slöseri.
           </p>
         </p>
-        <button id="tempBtn" onClick={postData}>
-          Temporär ja-knapp
-        </button>
         <p className="text1">99kr/mån</p>
         <Dashboard />
         <div>

@@ -89,6 +89,10 @@
   display: flex;
 }
 
+.buttonClass > button {
+  cursor: pointer;
+}
+
 .ja {
   margin: 10px;
   width: 142px;
