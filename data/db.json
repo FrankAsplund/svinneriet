@@ -46,6 +46,11 @@
       "id": 1,
       "title": "ICA",
       "img": "../images/assets/ICA.png"
+    },
+    {
+      "id": 3,
+      "title": "Hemköp",
+      "img": "../images/assets/hemkop.png"
     }
   ]
 }
