@@ -7,7 +7,6 @@ import axios from "axios";
 import "./Done.css";
 
 import Navbar from "../components/Navbar/Navbar";
-import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
 import logga2 from "../components/assets/logga2.png";
 import confirm from "../components/assets/confirm.png";
