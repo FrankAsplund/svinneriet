@@ -20,12 +20,12 @@
 
 .settingsh1 {
   display: inline;
-  margin: 0px 26px 0px 26px;
+  margin: 0px 36px 0px 26px;
 }
 
 .settingsh2 {
   display: inline;
-  margin: 0px 36% 0px 26px;
+  margin: 0px 161px 0px 26px;
 }
 
 .settings-info p {
@@ -38,7 +38,7 @@
   font-weight: 500;
   font-size: 17px;
   color: #4c983e;
-  margin-left: 5%;
+  margin-left: 10px;
 }
 
 .pic1 {
@@ -51,7 +51,7 @@
   margin: 25px 0px 0px 30px;
 }
 
-.credit-info  {
+.credit-info {
   margin: 30px 0px 40px 20px;
 }
 
@@ -68,7 +68,7 @@
 
 #saveSettings {
   color: #fff;
-  background: #4C983E;
+  background: #4c983e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   width: 292px;
@@ -76,6 +76,6 @@
   font-weight: 600;
   font-size: 32px;
   text-align: center;
-  margin-top: 40%;
-  margin-left: 13%;
+  margin-top: 100px;
+  margin-left: 30px;
 }

@@ -35,7 +35,7 @@ class Menu extends Component {
         <Hamburger show={this.state.show} handleClose={this.hideModal}>
           <div className="hamClass">
             <div className="boxContainer">
-              <Link to="/Start">
+              <Link to="/">
                 <div className="box">
                   <img src={home} className="boxImg" alt="home"></img>
                   <p className="boxText">Hem</p>

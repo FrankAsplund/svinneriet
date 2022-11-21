@@ -19,13 +19,20 @@ export const ActiveSubs = () => {
     SubsGet();
   });
 
+  /* Fetching the JSON-database of the active subscriptions */
   const SubsGet = () => {
     const fetch = async () => {
       try {
         const { data } = await axios.get("http://localhost:8000/activeSubs");
         setSubs(data);
+        /* In case there are none. */
+        if (Object.keys(data).length == 0) {
+          document.getElementById("emptydb").innerHTML =
+            "Du har inga aktiva prenumerationer för tillfället.";
+        }
       } catch (err) {
         console.error(err);
+        alert("The API/database wasn't loaded, or something else went wrong.");
       }
     };
     fetch();
@@ -36,7 +43,6 @@ export const ActiveSubs = () => {
   function dbCheck() {
     const db = fetch("http://localhost:8000/activeSubs");
     console.log(db.length);
-    /* const isEmpty = Object.keys(db).length === 0; */
 
     if ((db === Object.keys(db).length) == 0) {
       document.getElementById("emptydb").innerHTML =
