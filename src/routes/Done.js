@@ -7,7 +7,6 @@ import axios from "axios";
 import "./Done.css";
 
 import Navbar from "../components/Navbar/Navbar";
-import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
 import logga2 from "../components/assets/logga2.png";
 import confirm from "../components/assets/confirm.png";
@@ -17,8 +16,10 @@ export const Done = () => {
   const { id } = useParams();
   const [store, setStore] = useState({});
 
+  /* Defines the useNavigate from the react-router, for navigation between pages */
   const navigate = useNavigate();
 
+  /* Fetching the JSON-database of the stores */
   useEffect(() => {
     const fetch = async () => {
       try {
@@ -35,9 +36,10 @@ export const Done = () => {
     <div className="doneStyle">
       <Navbar />
 
+      {/* Back button, navigate(-1) takes you to the page you previously where on */}
       <div>
         <button onClick={() => navigate(-1)}>
-          <img src={vector} id="vector"></img>
+          <img src={vector} id="vector" alt="back button"></img>
         </button>
       </div>
 
@@ -63,7 +65,7 @@ export const Done = () => {
           Laga nu något riktigt gott - du förtjänar det!
         </p>
         <div>
-          <Link to="/">
+          <Link to="/Start">
             <p className="start">Ta mig till startsidan</p>
           </Link>
         </div>

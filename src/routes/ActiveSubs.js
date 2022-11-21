@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./activesubs.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
-/* import { useNavigate } from "react-router-dom"; */
+import { useNavigate } from "react-router-dom";
 
 import Navbar from "../components/Navbar/Navbar";
 import hemkop from "../components/assets/hemkop.png";
@@ -13,7 +13,7 @@ import add from "../components/assets/add.png";
 
 export const ActiveSubs = () => {
   const [subs, setSubs] = useState([]);
-  /* const navigate = useNavigate(); */
+  const navigate = useNavigate();
 
   useEffect(() => {
     SubsGet();
@@ -33,16 +33,28 @@ export const ActiveSubs = () => {
 
   /* Axios Delete request */
 
+  function dbCheck() {
+    const db = fetch("http://localhost:8000/activeSubs");
+    console.log(db.length);
+    /* const isEmpty = Object.keys(db).length === 0; */
+
+    if ((db === Object.keys(db).length) == 0) {
+      document.getElementById("emptydb").innerHTML =
+        "Du har inga aktiva prenumerationer för tillfället.";
+    } else {
+    }
+  }
+
   const deleteData = (id) => {
     axios
       .delete(`http://localhost:8000/activeSubs/${id}`)
       .then(function (response) {
         console.log("Deleted", response);
-        SubsGet();
       })
       .catch(function (error) {
         console.log(error);
       });
+    dbCheck();
     SubsGet();
   };
 
@@ -51,9 +63,9 @@ export const ActiveSubs = () => {
       <Navbar />
 
       <div>
-        <Link to="/">
+        <button onClick={() => navigate(-1)}>
           <img src={vector} id="vector"></img>
-        </Link>
+        </button>
       </div>
 
       <div className="h1Style">
@@ -61,6 +73,10 @@ export const ActiveSubs = () => {
           Aktiva <br />
           Prenumerationer
         </h1>
+      </div>
+
+      <div className="emptydbClass">
+        <p id="emptydb"></p>
       </div>
 
       <div className="subGrid">
@@ -90,14 +106,14 @@ export const ActiveSubs = () => {
       </div>
 
       <div className="addClass">
-        <Link to="/">
+        <Link to="/Home">
           <img src={add} id="add"></img>
         </Link>
       </div>
 
       <div className="textSub">
         <div>
-          <Link to="/">
+          <Link to="/Start">
             <p className="startSub">Ta mig till startsidan</p>
           </Link>
         </div>

@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
 import axios from "axios";
 
-import { Link } from "react-router-dom";
 import "./Home.css";
 
 import Navbar from "../components/Navbar/Navbar";
 import { StoreCard } from "../components/StoreCard/StoreCard";
-
 import vector from "../components/assets/vector.png";
 
 export const Home = () => {
   /* Axios GET request */
 
   const [stores, setStores] = useState([]);
-  /* const [error, setError] = useState(null); */
 
+  /* Fetching the JSON-database of the stores, for displaying all the stores on the page */
   useEffect(() => {
     const fetch = async () => {
       try {
@@ -23,6 +22,7 @@ export const Home = () => {
         setStores(data);
       } catch (err) {
         console.error(err);
+        alert("The API/database wasn't loaded, or something else went wrong.");
       }
     };
     fetch();
@@ -33,7 +33,7 @@ export const Home = () => {
       <Navbar />
 
       <Link to="/Start">
-        <img src={vector} id="vector" />
+        <img src={vector} id="vector" alt="back button" />
       </Link>
 
       <div className="search">

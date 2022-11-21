@@ -1,24 +1,28 @@
 import React from "react";
-import "./routes.css";
+import { useNavigate } from "react-router-dom";
+
 import "./settings.css";
 import creditcardsmall from "../components/assets/credit-card-small.png";
 import homesymbol from "../components/assets/home-symbol.png";
 
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import vector from "../components/assets/vector.png";
 
-//test kommentar
-
 export const Settings = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="subStyle">
       <Navbar />
 
       <div>
-        <Link to="/">
-          <img src={vector} id="vector"></img>
-        </Link>
+        {/* Back button, navigate(-1) takes you to the page you previously where on */}
+        <div>
+          <button onClick={() => navigate(-1)}>
+            <img src={vector} id="vector" alt="back button"></img>
+          </button>
+        </div>
+
         <div className="settings-header">
           <h1> Inställningar </h1>
         </div>
@@ -32,26 +36,20 @@ export const Settings = () => {
           <h1 className="settingsh2"> Address </h1>
           <a href="/Pay">ÄNDRA </a>
           <div className="pic2">
-          <img src={homesymbol} id="homesymbol"></img>
-          <div className="address-info">
-          <ul>
-            <li>Frank Asplund </li>
-            <li>
-            Randomgata 15
-            </li>
-            <li>
-            Stockholm
-            </li>
-            <li>
-              Våning 7 
-            </li>
-            <li>
-            Nr 7
-              </li>
-          </ul>
+            <img src={homesymbol} id="homesymbol"></img>
+            <div className="address-info">
+              <ul>
+                <li>Frank Asplund </li>
+                <li>Randomgata 15</li>
+                <li>Stockholm</li>
+                <li>Våning 7</li>
+                <li>Nr 7</li>
+              </ul>
+            </div>
           </div>
-          </div>
-          <button type="button" id="saveSettings">Lägg till</button>
+          <button type="button" id="saveSettings">
+            Lägg till
+          </button>
         </div>
       </div>
     </div>

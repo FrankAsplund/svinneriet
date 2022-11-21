@@ -21,31 +21,32 @@ export const Pickup = () => {
       </div>
 
       <div className="center">
-        <div className="confirmContainer1">
-          <img className="logoImg1" src={logga2} />
-          <img className="storeImg1" src={hemkop} />
-          <div className="mysteryBag"> 
-          <p id="mysteryText">En mystery shopping bag är nu tillgänglig för upphämtning!</p>
-          <img className="confirmImg1" src={confirm} />
+        <div className="pickupContainer">
+          <img className="logoImgPickup" src={logga2} />
+          <img className="storeImgPickup" src={hemkop} />
+          <div className="mysteryBag">
+            <p id="mysteryText">
+              En mystery shopping bag är nu tillgänglig för upphämtning!
+            </p>
           </div>
+          <img className="confirmImgPickup" src={confirm} />
         </div>
       </div>
-        <div className="mysteryInfo">
-            <p className="mysteryInfoText">
-            Du betalar för denna vara som vanligt i butiken, efter uppvisande av prenumeration.
-            </p>
-        </div>
-        <div className="greenBagCenter"> 
+      <div className="mysteryInfo">
+        <p className="mysteryInfoText">
+          Du betalar för denna vara som vanligt i butiken, efter uppvisande av
+          prenumeration.
+        </p>
+      </div>
+      <div className="greenBagCenter">
         <img className="greenBag" src={greenbag} />
-        </div>
+      </div>
 
-
-        <div className="buttonCenter">
-          <Link to="/">
-            <p className="startPage">Ta mig till startsidan</p>
-          </Link>
-        </div>
-        </div>
-
+      <div className="buttonCenter">
+        <Link to="/Start">
+          <p className="startPage">Ta mig till startsidan</p>
+        </Link>
+      </div>
+    </div>
   );
 };

@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navContainer">
       <div className="navbar">
         <div className="navbarItems">
-          <Link to="/">
+          <Link to="/Home">
             <img className="logga" src={logga3} />
           </Link>
           <h2 class="logoName">Svinneriet</h2>

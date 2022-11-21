@@ -1,10 +1,11 @@
 button {
+  background-color: #ffffff00;
+  padding: 0;
   border-width: 0;
   border-style: none;
 }
 
 .h1Style {
-  display: flex;
   justify-content: center;
   margin: 10px;
 }
@@ -20,7 +21,6 @@ button {
 }
 
 .subGrid {
-  /* display: grid; */
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
@@ -198,8 +198,25 @@ button {
   border-radius: 10px;
 }
 
+.emptydbClass {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#emptydb {
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+
+  text-align: center;
+  letter-spacing: -0.01px;
+
+  color: rgba(0, 0, 0, 0.4);
+}
+
 @media screen and (max-width: 895px) {
-  /* test kommentar */
   .h1Style {
     display: flex;
     justify-content: center;

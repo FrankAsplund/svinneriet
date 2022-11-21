@@ -2,23 +2,24 @@ import React from "react";
 import "./routes.css";
 import "./pay.css";
 
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
-import logga2 from "../components/assets/logga2.png";
 import creditcard from "../components/assets/creditcard.png";
 
 export const Pay = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="subStyle">
+    <div className="payStyle">
       <Navbar />
 
       <div>
-        <Link to="/">
-          <img src={vector} id="vector"></img>
-        </Link>
+        <button onClick={() => navigate(-1)}>
+          <img src={vector} id="vector" alt="back button"></img>
+        </button>
       </div>
+
       <div className="pay-content">
         <div className="pay-header">
           <h1> Kredit / Betalkort </h1>
@@ -46,10 +47,10 @@ export const Pay = () => {
                 id="inputCard"
               />
             </label>
-            </form>
-            </div>
-            <div className="secondForm">
-            <form>
+          </form>
+        </div>
+        <div className="secondForm">
+          <form>
             <label className="date">
               Expiry date
               <input
@@ -61,20 +62,15 @@ export const Pay = () => {
             </label>
             <label className="CVC">
               CVC
-              <input
-                type="text"
-                name="cvc"
-                placeholder="315"
-                id="inputCVC"
-              />
+              <input type="text" name="cvc" placeholder="315" id="inputCVC" />
             </label>
-            
           </form>
 
-          <button type="button" id="submit">Lägg till</button> 
-          </div>
-          </div>
-      
+          <button type="button" id="submit">
+            Lägg till
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

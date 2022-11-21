@@ -18,6 +18,7 @@ export const Subscribe = () => {
 
   const navigate = useNavigate();
 
+  /* Fetching the JSON-database of the current store */
   useEffect(() => {
     const fetch = async () => {
       try {
@@ -30,32 +31,13 @@ export const Subscribe = () => {
     fetch();
   }, []);
 
-  /* Axios POST request */
-
-  const postData = (e) => {
-    e.preventDefault();
-    axios
-      .post("http://localhost:8000/activeSubs", {
-        id: store.id,
-        title: store.title,
-        img: store.img,
-      })
-      .then(function (response) {
-        console.log(response);
-        navigate(`/Done/${store.id}`);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
-
   return (
     <div className="subStyle">
       <Navbar />
 
       <div>
         <button onClick={() => navigate(-1)}>
-          <img src={vector} id="vector"></img>
+          <img src={vector} id="vector" alt="back button"></img>
         </button>
       </div>
 

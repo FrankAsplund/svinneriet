@@ -1,3 +1,10 @@
+.pay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-image {
   margin: 0px 0px 0px 20px;
 }
@@ -52,7 +59,8 @@
 }
 
 .secondForm {
-  margin-left: 10px;
+  left: -10px;
+  /* margin-left: 10px; */
 }
 
 .secondForm form {
@@ -98,7 +106,7 @@
 
 #submit {
   color: #fff;
-  background: #4C983E;
+  background: #4c983e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   width: 292px;
@@ -106,6 +114,5 @@
   font-weight: 600;
   font-size: 32px;
   text-align: center;
-  margin-top: 5%;
-  margin-left: 13%;
+  margin-top: 20px;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -8,6 +7,7 @@ import axios from "axios";
 import "./Modal.css";
 
 const Modal = ({ handleClose, show, children }) => {
+  /* Display or hide modal by switching css-classes */
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   /* fetch the correct store page based on the id */
@@ -15,6 +15,7 @@ const Modal = ({ handleClose, show, children }) => {
   const [store, setStore] = useState({});
   const navigate = useNavigate();
 
+  /* Fetching the JSON-database of the current store */
   useEffect(() => {
     const fetch = async () => {
       try {
@@ -27,6 +28,9 @@ const Modal = ({ handleClose, show, children }) => {
     fetch();
   }, []);
 
+  /* Creates an entry in to the activesubs JSON-database based on the current ID of the page 
+  (which is the same id as the store)
+  , and then takes you to the Done-page. */
   const postData = (e) => {
     e.preventDefault();
     axios
