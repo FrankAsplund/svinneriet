@@ -78,7 +78,12 @@ class Menu extends Component {
             </div>
           </div>
         </Hamburger>
-        <img className="hamburger" src={hamburger} onClick={this.showModal} />
+        <img
+          className="hamburger"
+          src={hamburger}
+          onClick={this.showModal}
+          alt="hamburger menu"
+        />
       </main>
     );
   }

@@ -1,10 +1,7 @@
-import React, { Component } from "react";
-import { NavLinks } from "./NavLinks";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logga2 from "../assets/logga2.png";
 import logga3 from "../assets/logga3.png";
-import hamburger from "../assets/hamburger.png";
 import Menu from "../Hamburger/Menu.js";
 
 const Navbar = () => {
@@ -13,7 +10,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbarItems">
           <Link to="/Home">
-            <img className="logga" src={logga3} />
+            <img className="logga" src={logga3} alt="logo" />
           </Link>
           <h2 class="logoName">Svinneriet</h2>
           <div className="hamburgerNav">

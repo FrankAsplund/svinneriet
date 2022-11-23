@@ -30,13 +30,17 @@ export const Settings = () => {
           <h1 className="settingsh1"> Betalningsmetod </h1>
           <a href="/Pay">ÄNDRA </a>
           <div className="pic1">
-            <img src={creditcardsmall} id="creditcardsmall"></img>
+            <img
+              src={creditcardsmall}
+              id="creditcardsmall"
+              alt="credit card logo"
+            ></img>
             <p className="credit-info"> **** **** **** 4747 </p>
           </div>
           <h1 className="settingsh2"> Address </h1>
           <a href="/Pay">ÄNDRA </a>
           <div className="pic2">
-            <img src={homesymbol} id="homesymbol"></img>
+            <img src={homesymbol} id="homesymbol" alt="home"></img>
             <div className="address-info">
               <ul>
                 <li>Frank Asplund </li>

@@ -16,20 +16,20 @@ export const Pickup = () => {
 
       <div>
         <Link to="/Subscribe">
-          <img src={vector} id="vector"></img>
+          <img src={vector} id="vector" alt="back button"></img>
         </Link>
       </div>
 
       <div className="center">
         <div className="pickupContainer">
-          <img className="logoImgPickup" src={logga2} />
-          <img className="storeImgPickup" src={hemkop} />
+          <img className="logoImgPickup" src={logga2} alt="logo" />
+          <img className="storeImgPickup" src={hemkop} alt="store" />
           <div className="mysteryBag">
             <p id="mysteryText">
               En mystery shopping bag är nu tillgänglig för upphämtning!
             </p>
           </div>
-          <img className="confirmImgPickup" src={confirm} />
+          <img className="confirmImgPickup" src={confirm} alt="confirm" />
         </div>
       </div>
       <div className="mysteryInfo">
@@ -39,11 +39,11 @@ export const Pickup = () => {
         </p>
       </div>
       <div className="greenBagCenter">
-        <img className="greenBag" src={greenbag} />
+        <img className="greenBag" src={greenbag} alt="paper/plastic bag" />
       </div>
 
       <div className="buttonCenter">
-        <Link to="/Start">
+        <Link to="/">
           <p className="startPage">Ta mig till startsidan</p>
         </Link>
       </div>

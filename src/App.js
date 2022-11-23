@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+/* Removing "Router" crashes the app for some reason, despite it not being used */
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./routes/Home";
 import { Subscribe } from "./routes/Subscribe";

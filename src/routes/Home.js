@@ -21,8 +21,8 @@ export const Home = () => {
         const { data } = await axios.get("http://localhost:8000/stores");
         setStores(data);
       } catch (err) {
-        console.error(err);
-        alert("The API/database wasn't loaded, or something else went wrong.");
+        console.error(err, "Error message");
+        /* alert("The API/database wasn't loaded, or something else went wrong."); */
       }
     };
     fetch();
