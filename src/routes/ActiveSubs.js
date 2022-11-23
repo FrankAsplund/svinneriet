@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./activesubs.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -11,14 +11,14 @@ import confirm from "../components/assets/confirm.png";
 import add from "../components/assets/add.png";
 
 export const ActiveSubs = () => {
-  const ref = useRef("Du har inga aktiva prenumerationer för tillfället.");
+  /* const ref = useRef("Du har inga aktiva prenumerationer för tillfället."); */
 
   const [subs, setSubs] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
     SubsGet();
-  });
+  }, []);
 
   /* Fetching the JSON-database of the active subscriptions */
 
@@ -27,7 +27,19 @@ export const ActiveSubs = () => {
       try {
         const { data } = await axios.get("http://localhost:8000/activeSubs");
         setSubs(data);
-        dbCheck();
+        const dbArray = Object.keys(data).length;
+        console.log("db length: " + dbArray);
+
+        /* Checks if the database is empty, and displays a text in case */
+        if (dbArray === 0 || null || undefined) {
+          console.log("Du har inga aktiva prenumerationer för tillfället.");
+          document.getElementById("emptydb").innerHTML =
+            "Du har inga aktiva prenumerationer för tillfället.";
+        } else {
+          document.getElementById("emptydb").innerHTML = "";
+        }
+
+        /* dbCheck(); */
       } catch (err) {
         console.error(err, "Error message");
         /* alert("The API/database wasn't loaded, or something else went wrong."); */
@@ -36,17 +48,20 @@ export const ActiveSubs = () => {
     fetch();
   };
 
-  /* Checks if the database is empty, and displays a text in case */
-  function dbCheck() {
-    const db = fetch("http://localhost:8000/activeSubs");
-    console.log(db.length);
+  /*  function dbCheck() {
+    document.getElementById("emptydb").innerHTML = "";
+    const data = fetch("http://localhost:8000/activeSubs");
+    const dbArray = Object.keys(data).length;
+    console.log("db length: " + dbArray);
 
-    if ((db === Object.keys(db).length) === 0) {
-      const el = ref.current;
-      console.log(el, "ref");
+    if (dbArray === 0 || null || undefined) {
+      console.log("Du har inga aktiva prenumerationer för tillfället.");
+      document.getElementById("emptydb").innerHTML =
+        "Du har inga aktiva prenumerationer för tillfället.";
     } else {
+      document.getElementById("emptydb").innerHTML = "";
     }
-  }
+  } */
 
   /* Deletes an entry in the database */
   const deleteData = (id) => {
@@ -58,7 +73,6 @@ export const ActiveSubs = () => {
       .catch(function (error) {
         console.log(error);
       });
-    dbCheck();
     SubsGet();
   };
 
@@ -80,7 +94,7 @@ export const ActiveSubs = () => {
       </div>
 
       <div className="emptydbClass">
-        <p ref={ref} id="emptydb"></p>
+        <p id="emptydb"></p>
       </div>
 
       <div className="subGrid">
