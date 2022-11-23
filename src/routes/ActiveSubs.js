@@ -69,11 +69,11 @@ export const ActiveSubs = () => {
       .delete(`http://localhost:8000/activeSubs/${id}`)
       .then(function (response) {
         console.log("Deleted", response);
+        SubsGet();
       })
       .catch(function (error) {
         console.log(error);
       });
-    SubsGet();
   };
 
   return (
