@@ -65,6 +65,10 @@ export const Done = () => {
           Laga nu något riktigt gott - du förtjänar det!
         </p>
         <div>
+          <Link to="/ActiveSubs">
+            <p className="start">Mina prenumerationer</p>
+          </Link>
+
           <Link to="/">
             <p className="start">Ta mig till startsidan</p>
           </Link>

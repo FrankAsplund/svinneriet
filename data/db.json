@@ -41,5 +41,11 @@
       "img": "../images/assets/seveneleven.png"
     }
   ],
-  "activeSubs": []
+  "activeSubs": [
+    {
+      "id": 5,
+      "title": "Pressbyrån",
+      "img": "../images/assets/pressbyran.png"
+    }
+  ]
 }

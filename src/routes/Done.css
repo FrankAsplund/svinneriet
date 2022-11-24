@@ -131,7 +131,7 @@
 
 #textStacken {
   width: 364px;
-  height: 163px;
+  height: 100px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -294,7 +294,7 @@
 
   #textStacken {
     width: 364px;
-    height: 163px;
+    height: 100px;
 
     font-family: "Roboto";
     font-style: normal;
@@ -315,7 +315,6 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 50px;
-    /* or 75% */
 
     text-align: center;
     letter-spacing: -0.01px;

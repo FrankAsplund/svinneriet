@@ -2,7 +2,7 @@ import React from "react";
 import "./routes.css";
 import "./pay.css";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import vector from "../components/assets/vector.png";
 import creditcard from "../components/assets/creditcard.png";
@@ -66,9 +66,11 @@ export const Pay = () => {
             </label>
           </form>
 
-          <button type="button" id="submit">
-            Lägg till
-          </button>
+          <Link to="/settings">
+            <button type="button" id="submit">
+              Lägg till
+            </button>
+          </Link>
         </div>
       </div>
     </div>

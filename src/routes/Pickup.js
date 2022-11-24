@@ -1,7 +1,7 @@
 import React from "react";
 import "./pickup.css";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import hemkop from "../components/assets/hemkop.png";
 import vector from "../components/assets/vector.png";
@@ -10,14 +10,17 @@ import confirm from "../components/assets/confirm.png";
 import greenbag from "../components/assets/greenbag.png";
 
 export const Pickup = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="doneStyle">
       <Navbar />
 
+      {/* Back button, navigate(-1) takes you to the page you previously where on */}
       <div>
-        <Link to="/Subscribe">
+        <button onClick={() => navigate(-1)}>
           <img src={vector} id="vector" alt="back button"></img>
-        </Link>
+        </button>
       </div>
 
       <div className="center">
