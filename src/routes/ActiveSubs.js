@@ -11,8 +11,6 @@ import confirm from "../components/assets/confirm.png";
 import add from "../components/assets/add.png";
 
 export const ActiveSubs = () => {
-  /* const ref = useRef("Du har inga aktiva prenumerationer för tillfället."); */
-
   const [subs, setSubs] = useState([]);
   const navigate = useNavigate();
 
@@ -30,7 +28,7 @@ export const ActiveSubs = () => {
         const dbArray = Object.keys(data).length;
         console.log("db length: " + dbArray);
 
-        /* Checks if the database is empty, and displays a text in case */
+        /* Checks if the database is empty, and displays a text if it's true */
         if (dbArray === 0 || null || undefined) {
           console.log("Du har inga aktiva prenumerationer för tillfället.");
           document.getElementById("emptydb").innerHTML =
