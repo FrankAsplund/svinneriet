@@ -43,19 +43,14 @@
   ],
   "activeSubs": [
     {
-      "id": 5,
-      "title": "Pressbyrån",
-      "img": "../images/assets/pressbyran.png"
-    },
-    {
-      "id": 6,
-      "title": "Willys",
-      "img": "../images/assets/willys.png"
-    },
-    {
       "id": 1,
       "title": "ICA",
       "img": "../images/assets/ICA.png"
+    },
+    {
+      "id": 3,
+      "title": "Hemköp",
+      "img": "../images/assets/hemkop.png"
     }
   ]
 }
